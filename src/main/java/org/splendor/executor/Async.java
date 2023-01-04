@@ -82,7 +82,6 @@ public class Async {
     /**
      * 异步执行,直到所有都完成,或失败后，发起回调
      */
-
     public static void beginWorkAsync(long timeout, ExecutorService executorService, IGroupCallback groupCallback, WorkerWrapper... workerWrapper) {
         if (groupCallback == null) {
             groupCallback = new DefaultGroupCallback();
